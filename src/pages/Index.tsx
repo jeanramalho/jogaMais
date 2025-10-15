@@ -29,7 +29,7 @@ const Index = () => {
   }
 
   return (
-    <div className="min-h-screen bg-background flex flex-col">
+    <div className="min-h-screen bg-background flex flex-col pt-30">
       {/* Hero Section */}
       <div className="flex-1 flex items-center justify-center px-4">
         <div className="max-w-4xl mx-auto text-center space-y-8">
@@ -46,7 +46,7 @@ const Index = () => {
               JOGA+
             </h1>
             <p className="text-xl md:text-2xl text-foreground font-body max-w-2xl mx-auto">
-              Gerencie seus campeonatos de futebol e futsal com estilo street
+              Gerencie seus campeonatos com estilo.
             </p>
             <p className="text-base md:text-lg text-muted-foreground max-w-xl mx-auto">
               Times, jogadores, partidas, estatísticas e muito mais. Tudo em um só lugar.
