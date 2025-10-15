@@ -29,7 +29,7 @@ const Index = () => {
   }
 
   return (
-    <div className="min-h-screen bg-background flex flex-col pt-30">
+    <div className="min-h-screen bg-background flex flex-col">
       {/* Hero Section */}
       <div className="flex-1 flex items-center justify-center px-4">
         <div className="max-w-4xl mx-auto text-center space-y-8">

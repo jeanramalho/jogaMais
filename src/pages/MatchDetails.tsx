@@ -196,7 +196,7 @@ export default function MatchDetails() {
           <div className="flex-1">
             <h1 className="text-2xl font-display text-foreground">DETALHES DO JOGO</h1>
             <p className="text-sm text-muted-foreground">
-              {new Date(match.scheduled_date).toLocaleDateString("pt-BR")} às {match.scheduled_time}
+              {match.scheduled_date.split('T')[0].split('-').reverse().join('/')} às {match.scheduled_time}
             </p>
           </div>
         </div>

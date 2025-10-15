@@ -73,12 +73,28 @@ export default function SettingsTab({ championship, onUpdate }: SettingsTabProps
     }
   };
 
-  const handleFinalizeClick = () => {
+  const handleFinalizeClick = async () => {
     if (teams.length === 0) {
       toast.error("Não é possível finalizar um campeonato sem times");
       return;
     }
-    setChampionDialogOpen(true);
+    
+    // Verificar se existem jogos não finalizados
+    try {
+      const { matchService } = await import("@/services/matchService");
+      const matches = await matchService.getByChampionship(championship.id);
+      const hasUnfinishedMatches = matches.some(m => !m.finalized);
+      
+      if (hasUnfinishedMatches) {
+        toast.error("Não é possível finalizar o campeonato enquanto houver jogos não finalizados");
+        return;
+      }
+      
+      setChampionDialogOpen(true);
+    } catch (error) {
+      console.error("Erro ao verificar jogos:", error);
+      toast.error("Erro ao verificar status dos jogos");
+    }
   };
 
   const handleFinalize = async (championId: string) => {

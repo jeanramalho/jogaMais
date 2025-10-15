@@ -37,7 +37,7 @@ export default function Auth() {
     <div className="min-h-screen flex items-center justify-center bg-background p-4">
       <div className="w-full max-w-md space-y-8">
         {/* Logo e título */}
-        <div className="text-center space-y-2 pt-8">
+        <div className="text-center space-y-2 pt-16">
           <div className="flex justify-center">
             <div className="bg-gradient-primary p-4 rounded-xl shadow-neon">
               <Trophy className="w-12 h-12 text-primary-foreground" />

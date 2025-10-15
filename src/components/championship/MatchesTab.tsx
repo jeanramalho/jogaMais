@@ -104,9 +104,9 @@ export default function MatchesTab({ championshipId, championship }: MatchesTabP
     }
   };
 
-  // Agrupa jogos por data
+  // Agrupa jogos por data (corrigindo timezone)
   const matchesByDate = matches.reduce((acc, match) => {
-    const date = new Date(match.scheduled_date).toLocaleDateString("pt-BR");
+    const date = match.scheduled_date.split('T')[0].split('-').reverse().join('/');
     if (!acc[date]) acc[date] = [];
     acc[date].push(match);
     return acc;
