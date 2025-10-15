@@ -34,7 +34,7 @@ const Index = () => {
       <div className="flex-1 flex items-center justify-center px-4">
         <div className="max-w-4xl mx-auto text-center space-y-8">
           {/* Logo */}
-          <div className="flex justify-center">
+          <div className="flex justify-center mt-6 md:mt-10">
             <div className="bg-gradient-primary p-8 rounded-2xl shadow-neon-strong animate-glow">
               <Trophy className="w-20 h-20 text-primary-foreground" />
             </div>
