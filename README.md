@@ -22,13 +22,11 @@ A interface é construída em **React + TypeScript** com Vite, enquanto os dados
 - **Vite** — bundler/dev server moderno
 - **PL/pgSQL** — funções/migrations (há scripts/migrations no repositório `supabase`)
 
-> Fontes consultadas no repositório: estrutura `src/`, pasta `supabase`, `tailwind.config.ts` e arquivos de configuração do projeto. citeturn3view1turn3view2turn0view0
-
 ---
 
 ## 📦 Como rodar localmente
 
-> Assumo que você tenha Node.js (versão recente LTS), npm (ou pnpm/yarn) e, opcionalmente, a CLI do Supabase instalada.
+> Assumindo que você tenha Node.js (versão recente LTS), npm (ou pnpm/yarn) e, opcionalmente, a CLI do Supabase instalada.
 
 ### 1. Clone o repositório
 
@@ -54,7 +52,7 @@ cp .env.exemple .env
 # edite .env com SUPABASE_URL e SUPABASE_ANON_KEY (ou as variáveis VITE_ conforme o projeto)
 ```
 
-> Verifique a pasta `supabase/` para ver migrations e comentários sobre o setup do banco. citeturn5view0turn3view2
+> Verifique a pasta `supabase/` para ver migrations e comentários sobre o setup do banco. 
 
 ### 4. Executar em modo desenvolvimento
 
@@ -113,8 +111,6 @@ Deploy: Vercel / qualquer host estático + Supabase
 - Ranking de artilharia (top scorers) calculado automaticamente
 - Layout responsivo (desktop/mobile)
 
-> Essas funcionalidades estão alinhadas com a descrição do projeto e com a estrutura do código no diretório `src/`. citeturn3view1
-
 ---
 
 ## 🎯 Fluxo de Uso (exemplo rápido)
@@ -154,7 +150,7 @@ jogaMais/
 ## 🔁 Deploy
 
 - O projeto pode ser deployado facilmente no **Vercel** (front) apontando as variáveis de ambiente para a instância do Supabase.
-- Há um preview público indicado no repositório que serve como referência de deployment. citeturn0view0
+- Há um preview público indicado no repositório que serve como referência de deployment.
 
 ---
 
@@ -176,6 +172,6 @@ Desenvolvido por **Jean Ramalho** — contato: `jeanramalho.dev@gmail.com`.
 
 ## 📚 Referências (do repositório)
 
-- Repositório: `jeanramalho/jogaMais` (análise dos diretórios `src/`, `supabase/`, arquivos de configuração). citeturn0view0turn3view1turn3view2
+- Repositório: `jeanramalho/jogaMais` (análise dos diretórios `src/`, `supabase/`, arquivos de configuração).
 
 ---
