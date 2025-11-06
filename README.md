@@ -238,5 +238,3 @@ Repositório: jeanramalho/jogaMais (análise dos diretórios src/, supabase/, ar
 
 
 ---
-
-> Se quiser, eu já adapto esse README para um README.md pronto para commitar (com badges, screenshots e instruções de CI/CD). Quer que eu gere a versão finalizada para commit?
