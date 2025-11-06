@@ -169,9 +169,3 @@ jogaMais/
 Desenvolvido por **Jean Ramalho** — contato: `jeanramalho.dev@gmail.com`.
 
 ---
-
-## 📚 Referências (do repositório)
-
-- Repositório: `jeanramalho/jogaMais` (análise dos diretórios `src/`, `supabase/`, arquivos de configuração).
-
----
